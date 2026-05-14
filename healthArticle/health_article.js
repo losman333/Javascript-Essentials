@@ -7,14 +7,14 @@ xhr.open('GET', url, true);
 xhr.responseType = 'json';
 
 
-xhr.onload = function {
+xhr.onload = function () {
     var articles = xhr.response.articles;
-    var articlesDiv = document.getElementById('articles');  
+    var articlesDiv = document.getElementById('articles'); 
     
 
 }
 
-  articles.forEach(function(article) {
+articles.forEach(function(article) {
       var articleDiv = document.createElement('div');
       articleDiv.classList.add('article');
 
@@ -52,7 +52,9 @@ xhr.onload = function {
       articleDiv.appendChild(benefitsList);
 
       articlesDiv.appendChild(articleDiv);
-    });
+    }); 
+
+  
 
 
 
