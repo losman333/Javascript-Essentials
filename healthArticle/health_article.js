@@ -12,9 +12,7 @@ xhr.onload = function () {
     var articlesDiv = document.getElementById('articles'); 
     
 
-}
-
-articles.forEach(function(article) {
+    articles.forEach(function(article) {
       var articleDiv = document.createElement('div');
       articleDiv.classList.add('article');
 
@@ -53,6 +51,9 @@ articles.forEach(function(article) {
 
       articlesDiv.appendChild(articleDiv);
     }); 
+}
+
+
 
   
 
